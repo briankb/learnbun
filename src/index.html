@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Bun | Coming Soon</title>
+    <meta
+      name="description"
+      content="Learn Bun is coming soon. Join the waitlist for courses and hands-on Bun projects."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.ts"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+
+      <main class="hero">
+        <section class="hero-copy">
+          <div class="eyebrow">A focused home for modern Bun training</div>
+          <h1>Learn Bun<br />coming soon.</h1>
+          <p class="lede">
+            Practical lessons on Bun’s runtime, package manager, test runner, and full-stack tooling.
+            Early subscribers get launch updates first.
+          </p>
+
+          <form class="waitlist-form" id="waitlist-form" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button type="submit">Join waitlist</button>
+          </form>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+          <ul class="feature-list" aria-label="What to expect">
+            <li>Runtime, APIs, and deployment patterns that matter in production</li>
+            <li>Short, tactical examples instead of generic JavaScript filler</li>
+            <li>Courses built around the way Bun actually ships today</li>
+          </ul>
+        </section>
+
+        <aside class="hero-card" aria-label="Preview card">
+          <div class="logo-badge">
+            <img src="https://bun.com/logo.svg" alt="Bun logo" />
+          </div>
+          <div class="card-grid">
+            <div class="mini-stat">
+              <span class="stat-label">Focus</span>
+              <strong>TypeScript-first</strong>
+            </div>
+            <div class="mini-stat">
+              <span class="stat-label">Format</span>
+              <strong>Hands-on</strong>
+            </div>
+            <div class="mini-stat wide">
+              <span class="stat-label">Launch</span>
+              <strong>Foundations, full-stack routes, SQLite, testing, deploys</strong>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
