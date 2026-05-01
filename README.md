@@ -33,6 +33,12 @@ CREATE TABLE waitlist_signups (
 );
 ```
 
+## Admin
+
+- URL: `/admin`
+
+The admin page shows captured emails, signup timestamps, and includes a link to download the SQLite database file.
+
 ## Production
 
 ```bash
@@ -40,7 +46,14 @@ bun install
 bun run start
 ```
 
-Set `PORT` if your platform provides one.
+Set these environment variables in production:
+
+```env
+PORT=3000
+NODE_ENV=production
+ADMIN_USERNAME=your-admin-username
+ADMIN_PASSWORD=your-admin-password
+```
 
 ## Coolify on a Linux VPS
 
